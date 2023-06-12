@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script>
+        $(document).ready(function (){
+            // attr메소드에 여러 속성과 값을 설정하는 방법
+            $("img").attr({
+                alt: 'jQuery 라이브러리를 사용한 속성 지정',
+                src: function (index) {
+                    //변수를 선언합니다.
+                    var size = (index + 1) * 100;
+
+                    // 반환합니다.
+                    return 'http://placehold.it/' + size + 'x100';
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <img>
+    <img>
+    <img>
+</body>
+</html>
