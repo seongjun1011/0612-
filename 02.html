@@ -10,16 +10,14 @@
     <script>
         // 문서가 준비되었을 때 호출될 익명함수를 선언
         $(document).ready(function (){
-            // h1태그에 적용될 CSS 속성과 값 설정]
-            $('h1').css('color', 'red');
-            $('h1').css('background', 'black');
+            // script태그에 src 속성의 값을 반환 받아서 알림창에 미시지를 출력한다.
+            var src = $("script").attr("src");
+            alert(src);
         });
         
     </script>
 </head>
 <body>
-    <h1>Artificial Intelligence</h1>
-    <h1>Polytechnology University</h1>
-    <h1>Fresh Man</h1>
+    
 </body>
 </html>
